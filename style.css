@@ -1,0 +1,75 @@
+body{
+    background-color: rgb(232, 253, 253);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    color: rgb(145, 253, 174);
+}
+.task-input{ 
+    display: flex;
+    gap: 10px;
+    background: lightgray;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.task-input input{
+    flex: 1;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    outline: none;
+}
+.task-input input:focus{
+    border-color: blue;
+}
+.task-input button{
+    background: rgb(145, 253, 174);
+    border: none;
+    border-radius: 6px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.task-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+.task-item{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+.task-item span{
+    flex-grow: 1;
+    font-size: 16px;
+}
+.task-item span.completed{
+    text-decoration: line-through;
+    color: gray;
+}
+.task-item button{
+    margin-left: 10px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 5px;
+
+}
+.task-item .edit{
+    background: rgb(145, 253, 174);
+}
